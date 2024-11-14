@@ -1,0 +1,15 @@
+##barrierefreie website
+https://www.aktion-mensch.de/inklusion/barrierefreiheit/barrierefreie-website/gesetzliche-pflichten
+
+
+##CSS Sources
+#vorteile und grenzen von CSS
+https://page.mi.fu-berlin.de/mbudde/css_kurs/vorteile.html 
+
+
+##tools for webdevelopment
+https://caniuse.com/ => checking usability of attributes, tags and else cross browser
+
+https://schema.org/docs/schemas.html => schema.org is the standards for structured data in html
+
+
