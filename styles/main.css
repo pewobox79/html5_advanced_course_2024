@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    background-color: red;
+    font-family: "Kanit", sans-serif;
+}
+.color {
+
+    font-size: 1rem;
+    color: yellow !important;
+    font-weight: bold;
+}
+
+/*sections*/
+
+.sectionWrapper {
+
+    width: 100%;
+    min-height: 300px;
+    height: auto;
+    background-color: beige;
+    outline: 1px solid black
+}
+
+.textBlockInner {
+
+    min-height: 300px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.imageBlockInner {
+    min-height: 300px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gridInner {
+
+    min-height: 300px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.gridItem {
+    margin: 5px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 30px;
+
+}
+
+.gridItem>h3 {
+    margin: 0 5px
+}
+
+.gridItemBody {
+
+    display: flex;
+    text-align: center;
+
+}
+
+.gridItemBody>p {
+    margin: 0 5px
+}
+
+/*modal start*/
+.modalWrapper{
+
+    position:fixed;
+    top: 0px;
+    left: 0;
+    background-color:rgba(0,128,0, 0.5);
+    width: 100%;
+
+
+
+}
+
+.modalInner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh
+}
+
+.modalContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    height: 50vh;
+    padding: 30px;
+}
+
+/*modal end*/
+@media screen and (min-width: 568px) {
+
+    .gridInner {
+        flex-direction: row;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .gridInner {
+    
+        max-width: 800px;
+        width: 90%;
+        margin: auto
+    }
+
+
+    .modalContent{
+        max-width: 790px
+    }
+
+}
