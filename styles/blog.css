@@ -7,10 +7,10 @@
     display: flex;
 }
 
-.sidebar {
+.sidebar {  
     position: fixed;
     width: 200px;
-    background-color: yellow;
+    background-color:var(--sidebarBGColor);
     height: 100dvh;
 
 }
@@ -24,6 +24,80 @@
 
 .mainContent {
     width: calc(100% - 200px);
-    background-color: green;
+    background-color: var(--backgroundColor);
     padding: 20px
+}
+
+
+
+/*button styles*/
+
+.button {
+    outline: 2px solid black;
+    display: block;
+    width: 50%;
+    margin: 5px auto;
+    text-align: center;
+
+
+    /*animation*/
+    animation: buttonBGChange;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes buttonBGChange {
+
+    0% {
+        background-color: white !important;
+    }
+
+    100% {
+        background-color: red;
+    }
+
+}
+
+
+
+.button:hover {
+    background-color: red;
+    color: white;
+    outline: none;
+    transition: 1s;
+}
+
+
+.navInner {
+    border: 1px solid red;
+    height: 90dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.heading{
+    color: white;
+    font-size: 4rem
+}
+
+.heading-product {
+    font-size: 2rem
+}
+/*IMMER AN LETZTER STELLE oder eigene Datei als letzter import in head*/
+@media print {
+
+    #header,
+    .sidebar,
+    .behindSidebar {
+        display: none;
+    }
+
+    .mainContent {
+        width: 100%
+    }
+
+
 }

@@ -14,149 +14,271 @@
 
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/blog.css">
+
 </head>
 
 
 <body>
+
+    <style>
+        .colorText {
+            color: yellow
+        }
+    </style>
+
+    <script type="application/ld+json">
+
+        {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Das ist der Artikel Title",
+            "author": {
+                "@type": "Person",
+                "name": "Peter Wolf"
+            },
+            publisher:{
+                "@type": "Organization",
+                "name": "IT-SCHULUNGEN",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://www.bildurl.com"
+                },
+                "address":{
+                    "@type": "PostalAddress",
+                    "streetAddress": "Lindenstrasse 6a",
+                    
+                }
+            },
+            "description": "das ist ein toller artikel",
+            "articleBody":"lorem ipsum...."
+
+        }
+
+
+    </script>
+
+    <header id="header">
+        <nav>
+            <ul>
+                <li>
+                    <a href="/index.html">Homepage</a>
+                </li>
+                <li>
+                    <a href="/pages/blogArticle.html">Blogpost</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
     <div class="layoutContainer">
         <div class="sidebar">
             <aside>
+                <nav>
+                    <div class="navInner">
+                        <a href="/index.html">
+                            <div class="button">Homepage</div>
+                        </a>
 
-                <ul>
-                    <li>artikel 2</li>
-                    <li>artikel 3</li>
-                </ul>
+                        <a href="/index.html">
+                            <div class="button">Service</div>
+                        </a>
+                    </div>
+                </nav>
 
             </aside>
         </div>
+
+
+
+
+
+
         <div style="display: flex">
             <div class="behindSidebar"></div>
             <div class="mainContent">
-                <main>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat, nisl quis fermentum
-                    laoreet,
-                    odio erat
-                    interdum sapien, id pretium velit quam vel dui. Class aptent taciti sociosqu ad litora torquent per
-                    conubia nostra, per
-                    inceptos himenaeos. Nulla elementum velit non egestas hendrerit. Donec suscipit nibh neque, at
-                    porttitor
-                    lectus
-                    vulputate ut. Pellentesque sodales, nulla nec convallis ornare, mauris arcu varius dui, eget
-                    faucibus
-                    urna eros sit amet
-                    arcu. Duis elementum, dui non gravida fringilla, nulla diam gravida diam, et ullamcorper sapien
-                    mauris
-                    sed augue.
-                    Maecenas imperdiet eget lectus quis faucibus.
+                <main>
+                    <article>
+                        <strong itemprop="" itemscope="https://schema.org/Person">Verfasst von "Peter Wolf"</strong>
+                        <h1 class="heading heading-product">Das ist der Artikel Title</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat, nisl quis
+                            fermentum
+                            laoreet,
+                            odio erat
+                            interdum sapien, id pretium velit quam vel dui. Class aptent taciti sociosqu ad litora
+                            torquent
+                            per
+                            <a href="https://www.aviareps.com" title="link zu aviareps partner seite" target="_blank"
+                                rel="noopener"><span class="colorText">conubia nostra, per</span></a>
+                            inceptos himenaeos. Nulla elementum velit non egestas hendrerit. Donec suscipit nibh neque,
+                            at
+                            porttitor
+                            lectus
+                            vulputate ut. Pellentesque sodales, nulla nec convallis ornare, mauris arcu varius dui, eget
+                            faucibus
+                            urna eros sit amet
+                            arcu. Duis elementum, dui non gravida fringilla, nulla diam gravida diam, et ullamcorper
+                            sapien
+                            mauris
+                            sed augue.
+                            Maecenas imperdiet eget lectus quis faucibus.
 
-                    Donec ac ultricies ante, sollicitudin maximus sem. Cras nec ipsum lacinia, consequat urna ut,
-                    euismod
-                    risus. Nam
-                    tristique neque eu elit consectetur eleifend. In hac habitasse platea dictumst. Suspendisse finibus
-                    justo ut erat luctus
-                    aliquam. Aenean ultricies blandit cursus. Aenean in felis eu ante pellentesque condimentum eu nec
-                    sem.
-                    Curabitur ante
-                    ante, tincidunt in vestibulum id, venenatis nec odio. Nullam dignissim quis risus sed commodo.
-                    Aliquam
-                    facilisis
-                    vestibulum fringilla.
+                            Donec ac ultricies ante, sollicitudin maximus sem. Cras nec ipsum lacinia, consequat urna
+                            ut,
+                            euismod
+                            risus. Nam
+                            tristique neque eu elit consectetur eleifend. In hac habitasse platea dictumst. Suspendisse
+                            finibus
+                            justo ut erat luctus
+                            aliquam. Aenean ultricies blandit cursus. Aenean in felis eu ante pellentesque condimentum
+                            eu
+                            nec
+                            sem.
+                            Curabitur ante
+                            ante, tincidunt in vestibulum id, venenatis nec odio. Nullam dignissim quis risus sed
+                            commodo.
+                            Aliquam
+                            facilisis
+                            vestibulum fringilla.
 
-                    Etiam mauris elit, fringilla vel ultrices in, condimentum at urna. Etiam luctus, augue quis dapibus
-                    pharetra, ante lorem
-                    malesuada odio, sed dictum nisi ex aliquet nibh. Duis egestas mi odio, a volutpat augue aliquam
-                    eget.
-                    Suspendisse sapien
-                    nisi, eleifend vitae leo sit amet, lobortis ultrices tortor. Morbi nisi sem, molestie at quam in,
-                    accumsan consectetur
-                    urna. In hac habitasse platea dictumst. Sed pharetra ligula tellus, sed sodales metus lobortis eu.
-                    Curabitur rhoncus
-                    convallis turpis at blandit. Nunc tristique est et tincidunt ultricies. Proin eu vulputate orci. Sed
-                    gravida eros ac
-                    enim tincidunt, eget egestas lacus accumsan. Sed elit turpis, sagittis in eleifend quis, faucibus
-                    non
-                    turpis.
-                    Suspendisse potenti. Vivamus molestie erat vitae ante gravida consectetur. Vestibulum mattis leo
-                    eget
-                    bibendum
-                    vulputate.
+                            Etiam mauris elit, fringilla vel ultrices in, condimentum at urna. Etiam luctus, augue quis
+                            dapibus
+                            pharetra, ante lorem
+                            malesuada odio, sed dictum nisi ex aliquet nibh. Duis egestas mi odio, a volutpat augue
+                            aliquam
+                            eget.
+                            Suspendisse sapien
+                            nisi, eleifend vitae leo sit amet, lobortis ultrices tortor. Morbi nisi sem, molestie at
+                            quam
+                            in,
+                            accumsan consectetur
+                            urna. In hac habitasse platea dictumst. Sed pharetra ligula tellus, sed sodales metus
+                            lobortis
+                            eu.
+                            Curabitur rhoncus
+                            convallis turpis at blandit. Nunc tristique est et tincidunt ultricies. Proin eu vulputate
+                            orci.
+                            Sed
+                            gravida eros ac
+                            enim tincidunt, eget egestas lacus accumsan. Sed elit turpis, sagittis in eleifend quis,
+                            faucibus
+                            non
+                            turpis.
+                            Suspendisse potenti. Vivamus molestie erat vitae ante gravida consectetur. Vestibulum mattis
+                            leo
+                            eget
+                            bibendum
+                            vulputate.
 
-                    Sed magna justo, imperdiet vitae aliquam ut, pretium sed orci. Cras ultricies vehicula blandit.
-                    Fusce
-                    feugiat, ligula
-                    ultricies ultricies cursus, massa augue imperdiet diam, ac gravida metus enim vitae dolor. Phasellus
-                    non
-                    quam mollis,
-                    mollis nisl non, posuere eros. Nunc quam nisi, tempor non sodales sed, suscipit vitae ipsum. Nulla
-                    facilisi. Interdum et
-                    malesuada fames ac ante ipsum primis in faucibus. Sed rhoncus non diam sed iaculis. Maecenas
-                    fermentum
-                    tristique sem.
+                            Sed magna justo, imperdiet vitae aliquam ut, pretium sed orci. Cras ultricies vehicula
+                            blandit.
+                            Fusce
+                            feugiat, ligula
+                            ultricies ultricies cursus, massa augue imperdiet diam, ac gravida metus enim vitae dolor.
+                            Phasellus
+                            non
+                            quam mollis,
+                            mollis nisl non, posuere eros. Nunc quam nisi, tempor non sodales sed, suscipit vitae ipsum.
+                            Nulla
+                            facilisi. Interdum et
+                            malesuada fames ac ante ipsum primis in faucibus. Sed rhoncus non diam sed iaculis. Maecenas
+                            fermentum
+                            tristique sem.
 
-                    Nulla facilisis risus vitae lacus consequat sollicitudin. Pellentesque sit amet nibh sed massa
-                    ultrices
-                    feugiat. Donec
-                    mattis lorem id nunc faucibus, nec vestibulum tellus ullamcorper. Nunc euismod varius felis ut
-                    egestas.
-                    Pellentesque est
-                    arcu, elementum quis ullamcorper id, vehicula ac dui. Vestibulum ante ipsum primis in faucibus orci
-                    luctus et ultrices
-                    posuere cubilia curae; Sed id ipsum eu sapien iaculis consequat in sit amet ante. Nunc luctus, leo
-                    nec
-                    porttitor tempor,
-                    felis lorem lobortis ligula, sit amet pretium odio dui ac dolor. Curabitur sed tellus ac urna
-                    facilisis
-                    lacinia. Integer
-                    nec urna non mi varius malesuada in et mi. In hac habitasse platea dictumst.
+                            Nulla facilisis risus vitae lacus consequat sollicitudin. Pellentesque sit amet nibh sed
+                            massa
+                            ultrices
+                            feugiat. Donec
+                            mattis lorem id nunc faucibus, nec vestibulum tellus ullamcorper. Nunc euismod varius felis
+                            ut
+                            egestas.
+                            Pellentesque est
+                            arcu, elementum quis ullamcorper id, vehicula ac dui. Vestibulum ante ipsum primis in
+                            faucibus
+                            orci
+                            luctus et ultrices
+                            posuere cubilia curae; Sed id ipsum eu sapien iaculis consequat in sit amet ante. Nunc
+                            luctus,
+                            leo
+                            nec
+                            porttitor tempor,
+                            felis lorem lobortis ligula, sit amet pretium odio dui ac dolor. Curabitur sed tellus ac
+                            urna
+                            facilisis
+                            lacinia. Integer
+                            nec urna non mi varius malesuada in et mi. In hac habitasse platea dictumst.
 
-                    Nunc eu accumsan urna. Cras gravida augue eu mi tincidunt, a posuere tellus tempus. Donec vehicula
-                    odio
-                    ex, at dictum
-                    nunc gravida et. Donec id scelerisque diam. Aliquam consectetur et metus sed consectetur. Ut id
-                    fermentum leo. Curabitur
-                    vel consequat sapien, ac eleifend erat. Donec efficitur, ex varius maximus venenatis, odio dui
-                    pulvinar
-                    nulla, eget
-                    luctus lorem est a orci. Proin efficitur ligula at dolor vehicula, eu dapibus purus egestas.
-                    Pellentesque et mi semper,
-                    euismod ipsum non, convallis quam. Fusce fermentum libero quis ligula interdum facilisis. Aenean non
-                    nunc ornare,
-                    condimentum leo et, luctus est. Morbi pretium auctor eros, fermentum pharetra diam. Morbi faucibus
-                    sed
-                    turpis a gravida.
+                            Nunc eu accumsan urna. Cras gravida augue eu mi tincidunt, a posuere tellus tempus. Donec
+                            vehicula
+                            odio
+                            ex, at dictum
+                            nunc gravida et. Donec id scelerisque diam. Aliquam consectetur et metus sed consectetur. Ut
+                            id
+                            fermentum leo. Curabitur
+                            vel consequat sapien, ac eleifend erat. Donec efficitur, ex varius maximus venenatis, odio
+                            dui
+                            pulvinar
+                            nulla, eget
+                            luctus lorem est a orci. Proin efficitur ligula at dolor vehicula, eu dapibus purus egestas.
+                            Pellentesque et mi semper,
+                            euismod ipsum non, convallis quam. Fusce fermentum libero quis ligula interdum facilisis.
+                            Aenean
+                            non
+                            nunc ornare,
+                            condimentum leo et, luctus est. Morbi pretium auctor eros, fermentum pharetra diam. Morbi
+                            faucibus
+                            sed
+                            turpis a gravida.
 
-                    Aenean suscipit nunc nec odio sollicitudin, vestibulum egestas metus blandit. Vestibulum bibendum
-                    blandit quam, ultrices
-                    volutpat nibh lobortis rutrum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-                    posuere
-                    cubilia curae;
-                    Aenean sit amet ullamcorper ipsum, sit amet faucibus turpis. Suspendisse et sagittis orci, eu
-                    tristique
-                    elit. Nunc id
-                    faucibus neque. Aenean et lacinia ipsum, eu rhoncus justo. Class aptent taciti sociosqu ad litora
-                    torquent per conubia
-                    nostra, per inceptos himenaeos. In efficitur nibh ut libero consequat, vitae placerat leo ultrices.
-                    Quisque gravida
-                    fermentum ligula, vitae bibendum ipsum imperdiet sit amet. Nam vehicula aliquam magna et bibendum.
-                    Nullam iaculis sapien
-                    ante, ac lobortis ex rutrum et.
+                            Aenean suscipit nunc nec odio sollicitudin, vestibulum egestas metus blandit. Vestibulum
+                            bibendum
+                            blandit quam, ultrices
+                            volutpat nibh lobortis rutrum. Vestibulum ante ipsum primis in faucibus orci luctus et
+                            ultrices
+                            posuere
+                            cubilia curae;
+                            Aenean sit amet ullamcorper ipsum, sit amet faucibus turpis. Suspendisse et sagittis orci,
+                            eu
+                            tristique
+                            elit. Nunc id
+                            faucibus neque. Aenean et lacinia ipsum, eu rhoncus justo. Class aptent taciti sociosqu ad
+                            litora
+                            torquent per conubia
+                            nostra, per inceptos himenaeos. In efficitur nibh ut libero consequat, vitae placerat leo
+                            ultrices.
+                            Quisque gravida
+                            fermentum ligula, vitae bibendum ipsum imperdiet sit amet. Nam vehicula aliquam magna et
+                            bibendum.
+                            Nullam iaculis sapien
+                            ante, ac lobortis ex rutrum et.
 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae sagittis ex. Mauris nec
-                    justo
-                    vel felis congue
-                    hendrerit. Pellentesque consectetur nulla sem, sed euismod nisl ultrices nec. Suspendisse auctor
-                    porta
-                    dui, eget
-                    eleifend nisl rhoncus sed. Nunc sodales ullamcorper odio non mattis. Pellentesque et imperdiet odio,
-                    ut
-                    pretium sem.
-                    Fusce sit amet ante massa. Maecenas commodo molestie nisi in tempus. Curabitur sit amet massa
-                    ultrices
-                    ante egestas
-                    elementum. In pellentesque urna orci, ac pretium orci tempus a. Integer lobortis, metus ut dictum
-                    dictum, dui nulla
-                    tincidunt nibh, id porta elit leo at sem. Mauris pellentesque, massa ut congue pretium, nibh libero
-                    aliquam velit, eget
-                    maximus lectus quam vel purus.</main>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae sagittis ex. Mauris
+                            nec
+                            justo
+                            vel felis congue
+                            hendrerit. Pellentesque consectetur nulla sem, sed euismod nisl ultrices nec. Suspendisse
+                            auctor
+                            porta
+                            dui, eget
+                            eleifend nisl rhoncus sed. Nunc sodales ullamcorper odio non mattis. Pellentesque et
+                            imperdiet
+                            odio,
+                            ut
+                            pretium sem.
+                            Fusce sit amet ante massa. Maecenas commodo molestie nisi in tempus. Curabitur sit amet
+                            massa
+                            ultrices
+                            ante egestas
+                            elementum. In pellentesque urna orci, ac pretium orci tempus a. Integer lobortis, metus ut
+                            dictum
+                            dictum, dui nulla
+                            tincidunt nibh, id porta elit leo at sem. Mauris pellentesque, massa ut congue pretium, nibh
+                            libero
+                            aliquam velit, eget
+                            maximus lectus quam vel purus.
+                        </p>
+                    </article>
+                </main>
             </div>
         </div>
 
